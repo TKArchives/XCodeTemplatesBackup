@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Kind</key>
+    <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+    <key>Identifier</key>
+    <string>com.apple.dt.unit.watchkit2.componentwatchonlyapp</string>
+    <key>Ancestors</key>
+    <array>
+        <string>com.apple.dt.unit.watchkit2.basewatchkitapp</string>
+    </array>
+    <key>Components</key>
+    <array>
+        <dict>
+            <key>Identifier</key>
+            <string>com.apple.dt.unit.watchkit2.componentwatchonlyextension</string>
+            <key>Name</key>
+            <string>___VARIABLE_productName___ WatchKit Extension</string>
+            <key>ProductBuildPhaseInjections</key>
+            <array>
+                <dict>
+                    <key>TargetIdentifier</key>
+                    <string>com.apple.dt.watchkit2.watchkitapp</string>
+                </dict>
+            </array>
+        </dict>
+    </array>
+    <key>Targets</key>
+    <array>
+        <dict>
+            <key>SharedSettings</key>
+            <dict>
+                <key>IBSC_MODULE</key>
+                <string>___VARIABLE_productName:identifier____WatchKit_Extension</string>
+                <key>PRODUCT_BUNDLE_IDENTIFIER</key>
+                <string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.watchkitapp</string>
+            </dict>
+        </dict>
+    </array>
+    <key>Nodes</key>
+    <array>
+        <string>Info.plist:WatchApp</string>
+        <string>Info.plist:WatchAppBundleIdentifier</string>
+        <string>Info.plist:WatchAppDisplayName</string>
+    </array>
+    <key>Definitions</key>
+    <dict>
+        <key>Info.plist:WatchApp</key>
+        <string><![CDATA[<key>WKWatchKitApp</key>
+<true/>
+]]></string>
+        <key>Info.plist:WatchAppBundleIdentifier</key>
+        <string><![CDATA[<key>CFBundleIdentifier</key>
+<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+]]></string>
+        <key>Info.plist:WatchAppDisplayName</key>
+        <string><![CDATA[<key>CFBundleDisplayName</key>
+<string>___PACKAGENAME___</string>
+]]></string>
+    </dict>
+</dict>
+</plist>

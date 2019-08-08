@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Kind</key>
+    <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+    <key>Identifier</key>
+    <string>com.apple.dt.unit.messagesextensioncomponentios</string>
+    <key>Ancestors</key>
+    <array>
+        <string>com.apple.dt.unit.messagesextensionios</string>
+    </array>
+    <key>Targets</key>
+    <array>
+        <dict>
+            <key>SharedSettings</key>
+            <dict>
+                <key>PRODUCT_BUNDLE_IDENTIFIER</key>
+                <string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___.MessagesExtension</string>
+            </dict>
+        </dict>
+    </array>
+    <key>Definitions</key>
+    <dict>
+        <key>Info.plist:DisplayName</key>
+        <string><![CDATA[<key>CFBundleDisplayName</key>
+<string>___VARIABLE_productName___</string>
+]]></string>
+    </dict>
+</dict>
+</plist>

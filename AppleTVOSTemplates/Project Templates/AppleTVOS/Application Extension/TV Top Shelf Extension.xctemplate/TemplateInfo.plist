@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Kind</key>
+    <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+    <key>Identifier</key>
+    <string>com.apple.dt.unit.tvtopshelfextensiontvos</string>
+    <key>Ancestors</key>
+    <array>
+        <string>com.apple.dt.unit.tvosAppExtensionBase</string>
+    </array>
+    <key>Concrete</key>
+    <true/>
+    <key>Description</key>
+    <string>This template builds a TV Top Shelf application extension.</string>
+    <key>Targets</key>
+    <array>
+        <dict>
+            <key>ProductType</key>
+            <string>com.apple.product-type.app-extension</string>
+            <key>TargetIdentifier</key>
+            <string>com.apple.dt.tvTopShelfExtension</string>
+            <key>Frameworks</key>
+            <array>
+                <string>TVServices</string>
+            </array>
+        </dict>
+    </array>
+    <key>Options</key>
+    <array>
+        <dict>
+            <key>Identifier</key>
+            <string>languageChoice</string>
+            <key>Units</key>
+            <dict>
+                <key>Objective-C</key>
+                <array>
+                    <dict>
+                        <!-- General Obj-C -->
+                        <key>Nodes</key>
+                        <array>
+                            <string>ContentProvider.h:comments</string>
+                            <string>ContentProvider.h:imports:importFramework:TVServices</string>
+                            <string>ContentProvider.m:comments</string>
+                            <string>ContentProvider.m:imports:importHeader:ContentProvider.h</string>
+                            <string>ContentProvider.h:interface(ContentProvider : TVTopShelfContentProvider)</string>
+                            <string>ContentProvider.m:implementation:methods:topShelfMethods</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>ContentProvider.m:implementation:methods:topShelfMethods</key>
+                            <string>- (void)loadTopShelfContentWithCompletionHandler:(void (^) (id&lt;TVTopShelfContent&gt; content))completionHandler {
+    // Fetch content and call completionHandler
+    completionHandler(nil);
+}
+</string>
+                        </dict>
+                    </dict>
+                </array>
+                <key>Swift</key>
+                <array>
+                    <dict>
+                        <!-- General Swift -->
+                        <key>Nodes</key>
+                        <array>
+                            <string>ContentProvider.swift:comments</string>
+                            <string>ContentProvider.swift:imports:importFramework:TVServices</string>
+                            <string>ContentProvider.swift:implementation(ContentProvider: TVTopShelfContentProvider)</string>
+                            <string>ContentProvider.swift:implementation:methods:topShelfMethods</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>ContentProvider.swift:implementation:methods:topShelfMethods</key>
+                            <string>override func loadTopShelfContent(completionHandler: @escaping (TVTopShelfContent?) -> Void) {
+    // Fetch content and call completionHandler
+    completionHandler(nil);
+}
+</string>
+                        </dict>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+    </array>
+    <key>Nodes</key>
+    <array>
+        <string>Info.plist:NSExtension</string>
+    </array>
+    <key>Definitions</key>
+    <dict>
+        <key>Info.plist:NSExtension</key>
+        <dict>
+            <key>Beginning</key>
+            <string><![CDATA[<key>NSExtension</key>
+<dict>
+]]></string>
+            <key>End</key>
+            <string><![CDATA[
+    <key>NSExtensionPointIdentifier</key>
+    <string>com.apple.tv-top-shelf</string>
+    <key>NSExtensionPrincipalClass</key>
+    <string>___VARIABLE_moduleNamePrefixForClasses:XML___ContentProvider</string>
+</dict>
+]]></string>
+            <key>Indent</key>
+            <integer>3</integer>
+        </dict>
+    </dict>
+</dict>
+</plist>

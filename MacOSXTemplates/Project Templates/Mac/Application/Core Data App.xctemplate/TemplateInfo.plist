@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Kind</key>
+    <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+    <key>Identifier</key>
+    <string>com.apple.dt.unit.coreDataApplication</string>
+    <key>Ancestors</key>
+    <array>
+        <string>com.apple.dt.unit.cocoaApplicationDocumentBased</string>
+    </array>
+    <key>Options</key>
+    <array>
+        <dict>
+            <key>Identifier</key>
+            <string>coreData</string>
+            <key>NotPersisted</key>
+            <true/>
+            <key>Name</key>
+            <string>Use Core Data</string>
+            <key>Description</key>
+            <string>Whether the application should use the Core Data framework for storage</string>
+            <key>Type</key>
+            <string>checkbox</string>
+            <key>Default</key>
+            <string>false</string>
+            <key>Units</key>
+            <dict>
+                <key>true</key>
+                <array>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>documentBased</key>
+                            <string>true</string>
+                        </dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>Document.xcdatamodeld</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>Info.plist:DocumentTypes</key>
+                            <string><![CDATA[<key>CFBundleDocumentTypes</key>
+<array>
+    <dict>
+        <key>CFBundleTypeExtensions</key>
+        <array>
+            <string>binary</string>
+        </array>
+        <key>CFBundleTypeMIMETypes</key>
+        <array>
+            <string>application/octet-stream</string>
+        </array>
+        <key>CFBundleTypeName</key>
+        <string>Binary</string>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>LSTypeIsPackage</key>
+        <false/>
+        <key>NSDocumentClass</key>
+        <string>___VARIABLE_moduleNamePrefixForClasses___Document</string>
+        <key>NSPersistentStoreTypeKey</key>
+        <string>Binary</string>
+    </dict>
+    <dict>
+        <key>CFBundleTypeExtensions</key>
+        <array>
+            <string>sqlite</string>
+        </array>
+        <key>CFBundleTypeMIMETypes</key>
+        <array>
+            <string>application/octet-stream</string>
+        </array>
+        <key>CFBundleTypeName</key>
+        <string>SQLite</string>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>LSTypeIsPackage</key>
+        <false/>
+        <key>NSDocumentClass</key>
+        <string>___VARIABLE_moduleNamePrefixForClasses___Document</string>
+        <key>NSPersistentStoreTypeKey</key>
+        <string>SQLite</string>
+    </dict>
+    <dict>
+        <key>CFBundleTypeExtensions</key>
+        <array>
+            <string>xml</string>
+        </array>
+        <key>CFBundleTypeIconFile</key>
+        <string></string>
+        <key>CFBundleTypeMIMETypes</key>
+        <array>
+            <string>text/xml</string>
+        </array>
+        <key>CFBundleTypeName</key>
+        <string>XML</string>
+        <key>CFBundleTypeOSTypes</key>
+        <array>
+            <string>????</string>
+        </array>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>LSTypeIsPackage</key>
+        <false/>
+        <key>NSDocumentClass</key>
+        <string>___VARIABLE_moduleNamePrefixForClasses___Document</string>
+        <key>NSPersistentStoreTypeKey</key>
+        <string>XML</string>
+    </dict>
+</array>
+]]></string>
+                            <key>Document.xcdatamodeld</key>
+                            <dict>
+                                <key>Path</key>
+                                <string>Document.xcdatamodeld</string>
+                                <key>SortOrder</key>
+                                <integer>99</integer>
+                            </dict>
+                        </dict>
+                    </dict>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>documentBased</key>
+                            <string>true</string>
+                            <key>languageChoice</key>
+                            <string>Objective-C</string>
+                        </dict>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>Document.h:interface</key>
+                            <dict>
+                                <key>Beginning</key>
+                                <string>@interface Document : NSPersistentDocument</string>
+                                <key>End</key>
+                                <string>@end</string>
+                            </dict>
+                        </dict>
+                    </dict>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>documentBased</key>
+                            <string>true</string>
+                            <key>languageChoice</key>
+                            <string>Swift</string>
+                        </dict>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>Document.swift:implementation</key>
+                            <dict>
+                                <key>Beginning</key>
+                                <string>class Document: NSPersistentDocument {
+</string>
+                                <key>End</key>
+                                <string>}</string>
+                                <key>Indent</key>
+                                <integer>1</integer>
+                            </dict>
+                        </dict>
+                    </dict>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>documentBased</key>
+                            <string>false</string>
+                        </dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</key>
+                            <dict>
+                                <key>Path</key>
+                                <string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+                                <key>SortOrder</key>
+                                <integer>99</integer>
+                            </dict>
+                        </dict>
+                    </dict>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>documentBased</key>
+                            <string>false</string>
+                            <key>languageChoice</key>
+                            <string>Objective-C</string>
+                        </dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>AppDelegate.h:imports:importFramework:CoreData</string>
+                            <string>AppDelegate.h:interface:coreData</string>
+                            <string>AppDelegate.m:extension:saveAction</string>
+                            <string>AppDelegate.m:implementation:coreData</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>*:importCoreData</key>
+                            <string>#import &lt;CoreData/CoreData.h&gt;
+</string>
+                            <key>AppDelegate.h:interface:coreData</key>
+                            <string>@property (readonly, strong) NSPersistentContainer *persistentContainer;
+</string>
+                            <key>AppDelegate.m:extension:saveAction</key>
+                            <string>- (IBAction)saveAction:(id)sender;
+</string>
+                            <key>AppDelegate.m:implementation:coreData</key>
+                            <string>#pragma mark - Core Data stack
+
+@synthesize persistentContainer = _persistentContainer;
+
+- (NSPersistentContainer *)persistentContainer {
+    // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
+    @synchronized (self) {
+        if (_persistentContainer == nil) {
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@&quot;___PACKAGENAMEASIDENTIFIER___&quot;];
+            [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
+                if (error != nil) {
+                    // Replace this implementation with code to handle the error appropriately.
+                    // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                    
+                    /*
+                     Typical reasons for an error here include:
+                     * The parent directory does not exist, cannot be created, or disallows writing.
+                     * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+                     * The device is out of space.
+                     * The store could not be migrated to the current model version.
+                     Check the error message to determine what the actual problem was.
+                    */
+                    NSLog(@&quot;Unresolved error %@, %@&quot;, error, error.userInfo);
+                    abort();
+                }
+            }];
+        }
+    }
+    
+    return _persistentContainer;
+}
+
+#pragma mark - Core Data Saving and Undo support
+
+- (IBAction)saveAction:(id)sender {
+    // Performs the save action for the application, which is to send the save: message to the application&apos;s managed object context. Any encountered errors are presented to the user.
+    NSManagedObjectContext *context = self.persistentContainer.viewContext;
+
+    if (![context commitEditing]) {
+        NSLog(@&quot;%@:%@ unable to commit editing before saving&quot;, [self class], NSStringFromSelector(_cmd));
+    }
+    
+    NSError *error = nil;
+    if (context.hasChanges &amp;&amp; ![context save:&amp;error]) {
+        // Customize this code block to include application-specific recovery steps.              
+        [[NSApplication sharedApplication] presentError:error];
+    }
+}
+
+- (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)window {
+    // Returns the NSUndoManager for the application. In this case, the manager returned is that of the managed object context for the application.
+    return self.persistentContainer.viewContext.undoManager;
+}
+
+- (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
+    // Save changes in the application&apos;s managed object context before the application terminates.
+    NSManagedObjectContext *context = self.persistentContainer.viewContext;
+
+    if (![context commitEditing]) {
+        NSLog(@&quot;%@:%@ unable to commit editing to terminate&quot;, [self class], NSStringFromSelector(_cmd));
+        return NSTerminateCancel;
+    }
+    
+    if (!context.hasChanges) {
+        return NSTerminateNow;
+    }
+    
+    NSError *error = nil;
+    if (![context save:&amp;error]) {
+
+        // Customize this code block to include application-specific recovery steps.
+        BOOL result = [sender presentError:error];
+        if (result) {
+            return NSTerminateCancel;
+        }
+
+        NSString *question = NSLocalizedString(@&quot;Could not save changes while quitting. Quit anyway?&quot;, @&quot;Quit without saves error question message&quot;);
+        NSString *info = NSLocalizedString(@&quot;Quitting now will lose any changes you have made since the last successful save&quot;, @&quot;Quit without saves error question info&quot;);
+        NSString *quitButton = NSLocalizedString(@&quot;Quit anyway&quot;, @&quot;Quit anyway button title&quot;);
+        NSString *cancelButton = NSLocalizedString(@&quot;Cancel&quot;, @&quot;Cancel button title&quot;);
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert setMessageText:question];
+        [alert setInformativeText:info];
+        [alert addButtonWithTitle:quitButton];
+        [alert addButtonWithTitle:cancelButton];
+
+        NSInteger answer = [alert runModal];
+        
+        if (answer == NSAlertSecondButtonReturn) {
+            return NSTerminateCancel;
+        }
+    }
+
+    return NSTerminateNow;
+}
+</string>
+                        </dict>
+                    </dict>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>documentBased</key>
+                            <string>false</string>
+                            <key>languageChoice</key>
+                            <string>Swift</string>
+                        </dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>AppDelegate.swift:implementation:coreData</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>AppDelegate.swift:implementation:coreData</key>
+                            <string>// MARK: - Core Data stack
+
+lazy var persistentContainer: NSPersistentContainer = {
+    /*
+     The persistent container for the application. This implementation
+     creates and returns a container, having loaded the store for the
+     application to it. This property is optional since there are legitimate
+     error conditions that could cause the creation of the store to fail.
+    */
+    let container = NSPersistentContainer(name: &quot;___PACKAGENAMEASIDENTIFIER___&quot;)
+    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+        if let error = error {
+            // Replace this implementation with code to handle the error appropriately.
+            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+             
+            /*
+             Typical reasons for an error here include:
+             * The parent directory does not exist, cannot be created, or disallows writing.
+             * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+             * The device is out of space.
+             * The store could not be migrated to the current model version.
+             Check the error message to determine what the actual problem was.
+             */
+            fatalError(&quot;Unresolved error \(error)&quot;)
+        }
+    })
+    return container
+}()
+
+// MARK: - Core Data Saving and Undo support
+
+@IBAction func saveAction(_ sender: AnyObject?) {
+    // Performs the save action for the application, which is to send the save: message to the application's managed object context. Any encountered errors are presented to the user.
+    let context = persistentContainer.viewContext
+
+    if !context.commitEditing() {
+        NSLog("\(NSStringFromClass(type(of: self))) unable to commit editing before saving")
+    }
+    if context.hasChanges {
+        do {
+            try context.save()
+        } catch {
+            // Customize this code block to include application-specific recovery steps.
+            let nserror = error as NSError
+            NSApplication.shared.presentError(nserror)
+        }
+    }
+}
+
+func windowWillReturnUndoManager(window: NSWindow) -&gt; UndoManager? {
+    // Returns the NSUndoManager for the application. In this case, the manager returned is that of the managed object context for the application.
+    return persistentContainer.viewContext.undoManager
+}
+
+func applicationShouldTerminate(_ sender: NSApplication) -&gt; NSApplication.TerminateReply {
+    // Save changes in the application's managed object context before the application terminates.
+    let context = persistentContainer.viewContext
+    
+    if !context.commitEditing() {
+        NSLog("\(NSStringFromClass(type(of: self))) unable to commit editing to terminate")
+        return .terminateCancel
+    }
+    
+    if !context.hasChanges {
+        return .terminateNow
+    }
+    
+    do {
+        try context.save()
+    } catch {
+        let nserror = error as NSError
+
+        // Customize this code block to include application-specific recovery steps.
+        let result = sender.presentError(nserror)
+        if (result) {
+            return .terminateCancel
+        }
+        
+        let question = NSLocalizedString("Could not save changes while quitting. Quit anyway?", comment: "Quit without saves error question message")
+        let info = NSLocalizedString("Quitting now will lose any changes you have made since the last successful save", comment: "Quit without saves error question info");
+        let quitButton = NSLocalizedString("Quit anyway", comment: "Quit anyway button title")
+        let cancelButton = NSLocalizedString("Cancel", comment: "Cancel button title")
+        let alert = NSAlert()
+        alert.messageText = question
+        alert.informativeText = info
+        alert.addButton(withTitle: quitButton)
+        alert.addButton(withTitle: cancelButton)
+        
+        let answer = alert.runModal()
+        if answer == .alertSecondButtonReturn {
+            return .terminateCancel
+        }
+    }
+    // If we got here, it is time to quit.
+    return .terminateNow
+}
+</string>
+                        </dict>
+                    </dict>
+                </array>
+                <key>false</key>
+                <array>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>documentBased</key>
+                            <string>true</string>
+                            <key>languageChoice</key>
+                            <string>Objective-C</string>
+                        </dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>Document.m:implementation:methods:dataOfType(- (NSData *\)dataOfType:(NSString *\)typeName error:(NSError **\)outError)</string>
+                            <string>Document.m:implementation:methods:dataOfType:comments</string>
+                            <string>Document.m:implementation:methods:dataOfType:code</string>
+                            <string>Document.m:implementation:methods:readFromData(- (BOOL\)readFromData:(NSData *\)data ofType:(NSString *\)typeName error:(NSError **\)outError)</string>
+                            <string>Document.m:implementation:methods:readFromData:comments</string>
+                            <string>Document.m:implementation:methods:readFromData:code</string>
+                            <string>Document.m:implementation:methods:readFromData:comments:isEntireFileLoaded</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>Document.m:implementation:methods:dataOfType:comments</key>
+                            <string>// Insert code here to write your document to data of the specified type. If outError != NULL, ensure that you create and set an appropriate error if you return nil.
+// Alternatively, you could remove this method and override -fileWrapperOfType:error:, -writeToURL:ofType:error:, or -writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
+</string>
+                            <key>Document.m:implementation:methods:dataOfType:code</key>
+                            <string>[NSException raise:@"UnimplementedMethod" format:@"%@ is unimplemented", NSStringFromSelector(_cmd)];
+return nil;
+</string>
+                            <key>Document.m:implementation:methods:readFromData:comments</key>
+                            <string>// Insert code here to read your document from the given data of the specified type. If outError != NULL, ensure that you create and set an appropriate error if you return NO.
+// Alternatively, you could remove this method and override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead.</string>
+                            <key>Document.m:implementation:methods:readFromData:code</key>
+                            <string>[NSException raise:@"UnimplementedMethod" format:@"%@ is unimplemented", NSStringFromSelector(_cmd)];
+return YES;
+</string>
+                            <key>Document.m:implementation:methods:readFromData:comments:isEntireFileLoaded</key>
+                            <string>// If you do, you should also override -isEntireFileLoaded to return NO if the contents are lazily loaded.</string>
+                        </dict>
+                    </dict>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>documentBased</key>
+                            <string>true</string>
+                            <key>languageChoice</key>
+                            <string>Swift</string>
+                        </dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>Document.swift:implementation:methods:dataOfType(override func data(ofType typeName: String\) throws -&gt; Data)</string>
+                            <string>Document.swift:implementation:methods:dataOfType:comments</string>
+                            <string>Document.swift:implementation:methods:dataOfType:code</string>
+                            <string>Document.swift:implementation:methods:readFromData(override func read(from data: Data, ofType typeName: String\) throws)</string>
+                            <string>Document.swift:implementation:methods:readFromData:comments</string>
+                            <string>Document.swift:implementation:methods:readFromData:code</string>
+                            <string>Document.swift:implementation:methods:readFromData:comments:isEntireFileLoaded</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>Document.swift:implementation:methods:dataOfType:comments</key>
+                            <string>// Insert code here to write your document to data of the specified type, throwing an error in case of failure.
+// Alternatively, you could remove this method and override fileWrapper(ofType:), write(to:ofType:), or write(to:ofType:for:originalContentsURL:) instead.
+</string>
+                            <key>Document.swift:implementation:methods:dataOfType:code</key>
+                            <string>throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+</string>
+                            <key>Document.swift:implementation:methods:readFromData:comments</key>
+                            <string>// Insert code here to read your document from the given data of the specified type, throwing an error in case of failure.
+// Alternatively, you could remove this method and override read(from:ofType:) instead.</string>
+                            <key>Document.swift:implementation:methods:readFromData:code</key>
+                            <string>throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+</string>
+                            <key>Document.swift:implementation:methods:readFromData:comments:isEntireFileLoaded</key>
+                            <string>// If you do, you should also override isEntireFileLoaded to return false if the contents are lazily loaded.</string>
+                        </dict>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>

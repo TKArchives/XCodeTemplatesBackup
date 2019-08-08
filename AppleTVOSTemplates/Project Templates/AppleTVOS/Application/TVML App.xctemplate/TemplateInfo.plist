@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Kind</key>
+    <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+    <key>Identifier</key>
+    <string>com.apple.dt.unit.tvosMLApplication</string>
+    <key>Ancestors</key>
+    <array>
+        <string>com.apple.dt.unit.tvosApplicationBase</string>
+    </array>
+    <key>Concrete</key>
+    <true/>
+    <key>Description</key>
+    <string>This template provides a starting point for a Catalog application.</string>
+    <key>SortOrder</key>
+    <integer>30</integer>
+    <key>Options</key>
+    <array>
+        <dict>
+            <key>Identifier</key>
+            <string>languageChoice</string>
+            <key>Units</key>
+            <dict>
+                <key>Objective-C</key>
+                <dict>
+                    <!-- languageChoice=Objective-C -->
+                    <key>Definitions</key>
+                    <dict>
+                        <key>AppDelegate.h</key>
+                        <dict>
+                            <key>Path</key>
+                            <string>AppDelegate.h</string>
+                        </dict>
+                        <key>AppDelegate.m</key>
+                        <dict>
+                            <key>Path</key>
+                            <string>AppDelegate.m</string>
+                        </dict>
+                    </dict>
+                </dict>
+                <key>Swift</key>
+                <dict>
+                    <!-- languageChoice=Swift -->
+                    <key>Definitions</key>
+                    <dict>
+                        <key>AppDelegate.swift</key>
+                        <dict>
+                            <key>Path</key>
+                            <string>AppDelegate.swift</string>
+                        </dict>
+                    </dict>
+                </dict>
+            </dict>
+        </dict>
+    </array>
+    <key>Nodes</key>
+    <array>
+        <string>application.js</string>
+    </array>
+    <key>Definitions</key>
+    <dict>
+        <key>application.js</key>
+        <dict>
+            <key>Path</key>
+            <string>application.js</string>
+            <key>TargetIdentifiers</key>
+            <array/>
+        </dict>
+    </dict>
+</dict>
+</plist>
