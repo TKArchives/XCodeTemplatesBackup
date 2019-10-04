@@ -15,8 +15,6 @@
         <dict>
             <key>Identifier</key>
             <string>coreData</string>
-            <key>NotPersisted</key>
-            <true/>
             <key>Name</key>
             <string>Use Core Data</string>
             <key>Description</key>
@@ -167,6 +165,50 @@
                         <dict>
                             <key>documentBased</key>
                             <string>false</string>
+                            <key>languageChoice</key>
+                            <string>Swift</string>
+                            <key>userInterface</key>
+                            <string>SwiftUI</string>
+                        </dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching:code</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching:code</key>
+                            <string>// Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
+// Add `@Environment(\.managedObjectContext)` in the views that will need the context.
+let contentView = ContentView().environment(\.managedObjectContext, persistentContainer.viewContext)</string>
+                        </dict>
+                    </dict>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>documentBased</key>
+                            <string>true</string>
+                            <key>languageChoice</key>
+                            <string>Swift</string>
+                            <key>userInterface</key>
+                            <string>SwiftUI</string>
+                        </dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>Document.swift:implementation:methods:makeWindowControllers:code</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>Document.swift:implementation:methods:makeWindowControllers:code</key>
+                            <string>// Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
+// Add `@Environment(\.managedObjectContext)` in the views that will need the context.
+let contentView = ContentView().environment(\.managedObjectContext, self.managedObjectContext!)</string>
+                        </dict>
+                    </dict>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>documentBased</key>
+                            <string>false</string>
                         </dict>
                         <key>Nodes</key>
                         <array>
@@ -204,7 +246,7 @@
                             <string>#import &lt;CoreData/CoreData.h&gt;
 </string>
                             <key>AppDelegate.h:interface:coreData</key>
-                            <string>@property (readonly, strong) NSPersistentContainer *persistentContainer;
+                            <string>@property (readonly, strong) ___VARIABLE_persistentContainerClass___ *persistentContainer;
 </string>
                             <key>AppDelegate.m:extension:saveAction</key>
                             <string>- (IBAction)saveAction:(id)sender;
@@ -214,11 +256,11 @@
 
 @synthesize persistentContainer = _persistentContainer;
 
-- (NSPersistentContainer *)persistentContainer {
+- (___VARIABLE_persistentContainerClass___ *)persistentContainer {
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@&quot;___PACKAGENAMEASIDENTIFIER___&quot;];
+            _persistentContainer = [[___VARIABLE_persistentContainerClass___ alloc] initWithName:@&quot;___PACKAGENAMEASIDENTIFIER___&quot;];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.
@@ -325,14 +367,14 @@
                             <key>AppDelegate.swift:implementation:coreData</key>
                             <string>// MARK: - Core Data stack
 
-lazy var persistentContainer: NSPersistentContainer = {
+lazy var persistentContainer: ___VARIABLE_persistentContainerClass___ = {
     /*
      The persistent container for the application. This implementation
      creates and returns a container, having loaded the store for the
      application to it. This property is optional since there are legitimate
      error conditions that could cause the creation of the store to fail.
     */
-    let container = NSPersistentContainer(name: &quot;___PACKAGENAMEASIDENTIFIER___&quot;)
+    let container = ___VARIABLE_persistentContainerClass___(name: &quot;___PACKAGENAMEASIDENTIFIER___&quot;)
     container.loadPersistentStores(completionHandler: { (storeDescription, error) in
         if let error = error {
             // Replace this implementation with code to handle the error appropriately.
@@ -422,6 +464,24 @@ func applicationShouldTerminate(_ sender: NSApplication) -&gt; NSApplication.Ter
 </string>
                         </dict>
                     </dict>
+                    <dict>
+                        <!-- CoreDataCloudKit requires a minimum deployment target of 10.15 -->
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>coreDataCloudKit</key>
+                            <string>true</string>
+                        </dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>MACOSX_DEPLOYMENT_TARGET</key>
+									<string>10.15</string>
+								</dict>
+							</dict>
+						</array>
+                    </dict>
                 </array>
                 <key>false</key>
                 <array>
@@ -502,6 +562,51 @@ return YES;
                         </dict>
                     </dict>
                 </array>
+            </dict>
+        </dict>
+        <dict>
+            <key>Identifier</key>
+            <string>coreDataCloudKit</string>
+            <key>Name</key>
+            <string>Use CloudKit</string>
+            <key>Description</key>
+            <string>Whether the application should use Core Data with CloudKit</string>
+            <key>RequiredOptions</key>
+            <dict>
+                <key>coreData</key>
+                <string>true</string>
+                <key>documentBased</key>
+                <string>false</string>
+            </dict>
+            <key>Indented</key>
+            <true />
+            <key>SortOrder</key>
+            <integer>2</integer>
+            <key>Type</key>
+            <string>checkbox</string>
+            <key>Default</key>
+            <string>false</string>
+            <key>Values</key>
+            <array>
+                <string>false</string>
+                <string>true</string>
+            </array>
+            <key>Variables</key>
+            <dict>
+                <key>false</key>
+                <dict>
+                    <key>persistentContainerClass</key>
+                    <string>NSPersistentContainer</string>
+                    <key>usedWithCloudKitModelAttribute</key>
+                    <string>false</string>
+                </dict>
+                <key>true</key>
+                <dict>
+                    <key>persistentContainerClass</key>
+                    <string>NSPersistentCloudKitContainer</string>
+                    <key>usedWithCloudKitModelAttribute</key>
+                    <string>true</string>
+                </dict>
             </dict>
         </dict>
     </array>

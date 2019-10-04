@@ -34,6 +34,8 @@
         <string>Info.plist:MainNib</string>
         <string>Info.plist:PrincipalClass</string>
         <string>Info.plist:NSHumanReadableCopyright</string>
+        <string>Info.plist:NSSupportsAutomaticTermination</string>
+        <string>Info.plist:NSSupportsSuddenTermination</string>
         <string>Assets.xcassets</string>
      </array>
     <key>Definitions</key>
@@ -75,9 +77,20 @@
         <string><![CDATA[<key>CFBundleIconFile</key>
 <string></string>
 ]]></string>
+        <key>Info.plist:NSSupportsAutomaticTermination</key>
+        <string><![CDATA[<key>NSSupportsAutomaticTermination</key>
+<true/>
+]]></string>
+        <key>Info.plist:NSSupportsSuddenTermination</key>
+        <string><![CDATA[<key>NSSupportsSuddenTermination</key>
+<true/>
+]]></string>
         <!-- This is defined globally for templates that don't want language choice -->
         <key>main.m:main:NSApplicationMain</key>
-        <string>return NSApplicationMain(argc, argv);</string>
+        <string>@autoreleasepool {
+    // Setup code that might create autoreleased objects goes here.
+}
+return NSApplicationMain(argc, argv);</string>
     </dict>
 </dict>
 </plist>

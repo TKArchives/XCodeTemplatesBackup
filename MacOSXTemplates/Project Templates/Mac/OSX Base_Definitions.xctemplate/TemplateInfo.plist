@@ -19,6 +19,8 @@
                     <dict>
                         <key>*:imports:importCocoa</key>
                         <string>import Cocoa</string>
+                        <key>*:imports:importFoundation</key>
+                        <string>import Foundation</string>
                     </dict>
                 </dict>
             </dict>
@@ -33,6 +35,10 @@
         <string>#import &lt;Cocoa/Cocoa.h&gt;</string>
         <key>*:imports:importCocoaForUmbrellaHeader</key>
         <string>#import &lt;Cocoa/Cocoa.h&gt;</string>
+        <key>*:imports:importFoundation</key>
+        <string>#import &lt;Foundation/Foundation.h&gt;</string>
+        <key>*:imports:importFoundationForUmbrellaHeader</key>
+        <string>#import &lt;Foundation/Foundation.h&gt;</string>
     </dict>
 </dict>
 </plist>

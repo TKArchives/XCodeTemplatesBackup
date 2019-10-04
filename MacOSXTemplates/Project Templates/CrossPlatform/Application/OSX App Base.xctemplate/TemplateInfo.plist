@@ -33,8 +33,6 @@
                 <string>macosx</string>
                 <key>MACOSX_DEPLOYMENT_TARGET</key>
                 <string>___RUNNINGMACOSVERSION___</string>
-                <key>CODE_SIGN_IDENTITY</key>
-                <string>-</string>
             </dict>
         </dict>
     </array>
@@ -67,7 +65,10 @@
 ]]></string>
         <!-- This is defined globally for templates that don't want language choice -->
         <key>main.m:main:NSApplicationMain</key>
-        <string>return NSApplicationMain(argc, argv);</string>
+        <string>@autoreleasepool {
+    // Setup code that might create autoreleased objects goes here.
+}
+return NSApplicationMain(argc, argv);</string>
         <key>*:implementation:methods:applicationDidFinishLaunching:comments</key>
         <string>// Insert code here to initialize your application</string>
         <key>*:implementation:methods:applicationWillTerminate:comments</key>

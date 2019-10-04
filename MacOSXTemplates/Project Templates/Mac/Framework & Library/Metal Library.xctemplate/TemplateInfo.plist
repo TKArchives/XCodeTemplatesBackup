@@ -24,8 +24,6 @@
         <dict>
             <key>MACOSX_DEPLOYMENT_TARGET</key>
             <string>___RUNNINGMACOSVERSION___</string>
-            <key>CODE_SIGN_IDENTITY</key>
-            <string>-</string>
         </dict>
     </dict>
 </dict>

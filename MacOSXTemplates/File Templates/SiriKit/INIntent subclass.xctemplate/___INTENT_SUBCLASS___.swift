@@ -53,13 +53,7 @@ public protocol ___INTENT_SUBCLASS___Handling: NSObjectProtocol {
  */
 ___INTENT_AVAILABILITY___
 @objc public enum ___INTENT_SUBCLASS___ResponseCode: Int {
-    case unspecified = 0
-    case ready
-    case continueInApp
-    case inProgress
-    case success
-    case failure
-    case failureRequiringAppLaunch___INTENTRESPONSE_CUSTOM_CODES___
+___INTENTRESPONSE_CODES___
 }
 
 ___INTENT_AVAILABILITY___

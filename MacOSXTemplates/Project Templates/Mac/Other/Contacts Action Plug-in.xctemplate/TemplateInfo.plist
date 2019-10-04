@@ -104,15 +104,7 @@
     </array>
     <key>Nodes</key>
     <array>
-        <string>Info.plist:addressBook</string>
         <string>Info.plist:NSHumanReadableCopyright</string>
     </array>
-    <key>Definitions</key>
-    <dict>
-        <key>Info.plist:addressBook</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>BNDL</string>
-]]></string>
-    </dict>
 </dict>
 </plist>

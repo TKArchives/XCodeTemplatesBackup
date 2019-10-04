@@ -60,16 +60,8 @@
             </dict>
         </dict>
     </array>
-    <key>Nodes</key>
-    <array>
-        <string>Info.plist:PackageType</string>
-    </array>
     <key>Definitions</key>
     <dict>
-        <key>Info.plist:PackageType</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>APPL</string>
-]]></string>
         <!-- This is defined globally for templates that don't want language choice -->
         <key>main.m</key>
         <dict>

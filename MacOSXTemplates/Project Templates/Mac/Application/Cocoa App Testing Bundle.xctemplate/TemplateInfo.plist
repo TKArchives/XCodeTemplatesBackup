@@ -17,6 +17,10 @@
             <string>com.apple.dt.cocoaApplicationUnitTestBundleTarget</string>
             <key>TargetIdentifierToBeTested</key>
             <string>com.apple.dt.cocoaApplicationTarget</string>
+            <key>SettingsToCopyFromTargetBeingTested</key>
+            <array>
+                <string>MACOSX_DEPLOYMENT_TARGET</string>
+            </array>
         </dict>
     </array>
     <key>Options</key>

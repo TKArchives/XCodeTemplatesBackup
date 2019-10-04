@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>Toki File Template</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.toki.dt.unit.fileTemplateProject</string>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template creates an empty project with no files or targets.</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Product Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Description</key>
+			<string>Your new product&apos;s name</string>
+			<key>EmptyReplacement</key>
+			<string>ProductName</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>basePlatform</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Base Platform:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Description</key>
+			<string>Base Platform for the template installed.</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>OSXPlatform</string>
+			<key>Values</key>
+			<array>
+				<string>OSXPlatform</string>
+				<string>iOSPlatform</string>
+				<string>watchOSPlatform</string>
+				<string>tvOSPlatform</string>
+			</array>
+			<key>Variables</key>
+			<dict>
+				<key>OSXPlatform</key>
+				<dict>
+					<key>basePlatformPath</key>
+					<string>Contents/Developer/Library/Xcode/Templates</string>
+				</dict>
+				<key>iOSPlatform</key>
+				<dict>
+					<key>basePlatformPath</key>
+					<string>Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates</string>
+				</dict>
+				<key>watchOSPlatform</key>
+				<dict>
+					<key>basePlatformPath</key>
+					<string>Contents/Developer/Platforms/WatchOS.platform/Developer/Library/Xcode/Templates</string>
+				</dict>
+				<key>tvOSPlatform</key>
+				<dict>
+					<key>basePlatformPath</key>
+					<string>Contents/Developer/Platforms/AppleTVOS.platform/Developer/Library/Xcode/Templates</string>
+				</dict>
+			</dict>
+			<key>Units</key>
+			<dict>
+				<key>OSXPlatform</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</string>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:OSXPlatform</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</key>
+							<dict>
+								<key>Beginning</key>
+								<string>&lt;key&gt;Platforms&lt;/key&gt;
+&lt;array&gt;</string>
+								<key>End</key>
+								<string>&lt;/array&gt;</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>SortOrder</key>
+								<integer>1003</integer>
+								<key>SubstituteMacros</key>
+								<true/>
+							</dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:OSXPlatform</key>
+							<string>&lt;string&gt;com.apple.platform.macosx&lt;/string&gt;</string>
+						</dict>
+					</dict>
+				</array>
+				<key>iOSPlatform</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</string>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:iOSPlatform</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</key>
+							<dict>
+								<key>Beginning</key>
+								<string>&lt;key&gt;Platforms&lt;/key&gt;
+&lt;array&gt;</string>
+								<key>End</key>
+								<string>&lt;/array&gt;</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>SortOrder</key>
+								<integer>1003</integer>
+								<key>SubstituteMacros</key>
+								<true/>
+							</dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:iOSPlatform</key>
+							<string>&lt;string&gt;com.apple.platform.iphoneos&lt;/string&gt;</string>
+						</dict>
+					</dict>
+				</array>
+				<key>watchOSPlatform</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</string>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:watchOSPlatform</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</key>
+							<dict>
+								<key>Beginning</key>
+								<string>&lt;key&gt;Platforms&lt;/key&gt;
+&lt;array&gt;</string>
+								<key>End</key>
+								<string>&lt;/array&gt;</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>SortOrder</key>
+								<integer>1003</integer>
+								<key>SubstituteMacros</key>
+								<true/>
+							</dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:watchOSPlatform</key>
+							<string>&lt;string&gt;com.apple.platform.watchos&lt;/string&gt;</string>
+						</dict>
+					</dict>
+				</array>
+				<key>tvOSPlatform</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</string>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:tvOSPlatform</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</key>
+							<dict>
+								<key>Beginning</key>
+								<string>&lt;key&gt;Platforms&lt;/key&gt;
+&lt;array&gt;</string>
+								<key>End</key>
+								<string>&lt;/array&gt;</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>SortOrder</key>
+								<integer>1003</integer>
+								<key>SubstituteMacros</key>
+								<true/>
+							</dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:tvOSPlatform</key>
+							<string>&lt;string&gt;com.apple.platform.appletvos&lt;/string&gt;</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>optional</string>
+			<key>Name</key>
+			<string>Custom optional options</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+		</dict>
+		<dict>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>optional</key>
+				<string>true</string>
+			</dict>
+			<key>Identifier</key>
+			<string>templateName</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Template Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Description</key>
+			<string>Your new product&apos;s template name, default is same to product name</string>
+			<key>EmptyReplacement</key>
+			<string>___VARIABLE_productName___</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>optional</key>
+				<string>true</string>
+			</dict>
+			<key>Identifier</key>
+			<string>groupName</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Group Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Description</key>
+			<string>Group for your new product, default is full user name</string>
+			<key>EmptyReplacement</key>
+			<string>___FULLUSERNAME___</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>optional</key>
+				<string>true</string>
+			</dict>
+			<key>Identifier</key>
+			<string>password</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Password:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Description</key>
+			<string>System password</string>
+			<key>EmptyReplacement</key>
+			<string></string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>optional</key>
+				<string>true</string>
+				<key>basePlatform</key>
+				<array>
+					<string>iOSPlatform</string>
+					<string>watchOSPlatform</string>
+					<string>tvOSPlatform</string>
+				</array>
+			</dict>
+			<key>Identifier</key>
+			<string>OSXPlatform</string>
+			<key>Name</key>
+			<string>Also used for the macOS Application</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</string>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:OSXPlatform</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</key>
+							<dict>
+								<key>Beginning</key>
+								<string>&lt;key&gt;Platforms&lt;/key&gt;
+&lt;array&gt;</string>
+								<key>End</key>
+								<string>&lt;/array&gt;</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>SortOrder</key>
+								<integer>1003</integer>
+								<key>SubstituteMacros</key>
+								<true/>
+							</dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:OSXPlatform</key>
+							<string>&lt;string&gt;com.apple.platform.macosx&lt;/string&gt;</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>optional</key>
+				<string>true</string>
+				<key>basePlatform</key>
+				<array>
+					<string>OSXPlatform</string>
+					<string>watchOSPlatform</string>
+					<string>tvOSPlatform</string>
+				</array>
+			</dict>
+			<key>Identifier</key>
+			<string>iOSPlatform</string>
+			<key>Name</key>
+			<string>Also used for the iOS Application</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</string>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:iOSPlatform</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</key>
+							<dict>
+								<key>Beginning</key>
+								<string>&lt;key&gt;Platforms&lt;/key&gt;
+&lt;array&gt;</string>
+								<key>End</key>
+								<string>&lt;/array&gt;</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>SortOrder</key>
+								<integer>1003</integer>
+								<key>SubstituteMacros</key>
+								<true/>
+							</dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:iOSPlatform</key>
+							<string>&lt;string&gt;com.apple.platform.iphoneos&lt;/string&gt;</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>optional</key>
+				<string>true</string>
+				<key>basePlatform</key>
+				<array>
+					<string>OSXPlatform</string>
+					<string>iOSPlatform</string>
+					<string>tvOSPlatform</string>
+				</array>
+			</dict>
+			<key>Identifier</key>
+			<string>watchOSPlatform</string>
+			<key>Name</key>
+			<string>Also used for the watchOS Application</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</string>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:watchOSPlatform</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</key>
+							<dict>
+								<key>Beginning</key>
+								<string>&lt;key&gt;Platforms&lt;/key&gt;
+&lt;array&gt;</string>
+								<key>End</key>
+								<string>&lt;/array&gt;</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>SortOrder</key>
+								<integer>1003</integer>
+								<key>SubstituteMacros</key>
+								<true/>
+							</dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:watchOSPlatform</key>
+							<string>&lt;string&gt;com.apple.platform.watchos&lt;/string&gt;</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>optional</key>
+				<string>true</string>
+				<key>basePlatform</key>
+				<array>
+					<string>OSXPlatform</string>
+					<string>iOSPlatform</string>
+					<string>watchOSPlatform</string>
+				</array>
+			</dict>
+			<key>Identifier</key>
+			<string>tvOSPlatform</string>
+			<key>Name</key>
+			<string>Also used for the tvOS Application</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</string>
+							<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:tvOSPlatform</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms</key>
+							<dict>
+								<key>Beginning</key>
+								<string>&lt;key&gt;Platforms&lt;/key&gt;
+&lt;array&gt;</string>
+								<key>End</key>
+								<string>&lt;/array&gt;</string>
+								<key>Indent</key>
+								<integer>1</integer>
+								<key>SortOrder</key>
+								<integer>1003</integer>
+								<key>SubstituteMacros</key>
+								<true/>
+							</dict>
+							<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Platforms:tvOSPlatform</key>
+							<string>&lt;string&gt;com.apple.platform.appletvos&lt;/string&gt;</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>___VARIABLE_productName___Install</string>
+			<key>TargetType</key>
+			<string>Aggregate</string>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.aggregateTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>[TK]File template extension install</string>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>ShellScript</key>
+					<string>ORIGIN_PATH=&quot;/Applications/Xcode.app/___VARIABLE_basePlatformPath___/File Templates&quot;
+GROUP_NAME=&quot;___VARIABLE_groupName___&quot;
+GROUP_PATH=&quot;${ORIGIN_PATH}/${GROUP_NAME}&quot;
+LOCAL_PATH=&quot;${PROJECT_DIR}/${PROJECT_NAME}&quot;
+TEMPLATE_NAME=&quot;${PROJECT_NAME}.xctemplate&quot;
+PASSWORD_FILE=&quot;${PROJECT_DIR}/${PROJECT_NAME}/Password&quot;
+
+createGroupFun(){
+    if [ -d &quot;${GROUP_PATH}&quot; ]; then
+        echo &quot;[Group Folder Exsit]&quot;
+    else
+        echo &quot;[Group Folder NotFound]&quot;
+        if [ $# -eq 0 ]; then
+#apple script
+#----------------------
+originFile=&quot;${ORIGIN_PATH}&quot;    
+groupName=&quot;${GROUP_NAME}&quot;
+osascript &lt;&lt;EOF
+    tell application &quot;Finder&quot;
+        make folder at (POSIX file &quot;$originFile&quot;) with properties {name:&quot;$groupName&quot;}
+    end tell
+EOF
+#----------------------
+        else
+            PASSWORD=$1
+            echo &quot;${PASSWORD}&quot; | sudo -S mkdir &quot;${GROUP_PATH}&quot;
+        fi
+    fi
+}
+
+removeFun(){
+    if [ -d &quot;${GROUP_PATH}/${TEMPLATE_NAME}&quot; ]; then   
+        if [ $# -eq 0 ]; then
+#apple script
+#----------------------
+originFile=&quot;${GROUP_PATH}/${TEMPLATE_NAME}&quot;    
+osascript &lt;&lt;EOF
+    tell application &quot;Finder&quot;
+            delete POSIX file &quot;$originFile&quot;
+    end tell
+EOF
+#----------------------
+        else
+            PASSWORD=$1
+            echo &quot;${PASSWORD}&quot; | sudo -S rm -fr &quot;${GROUP_PATH}/${TEMPLATE_NAME}&quot;
+        fi
+    else
+        echo &quot;[Origin File NotFound]&quot;
+    fi 
+}
+
+duplicateFun(){
+    if [ $# -eq 0 ]; then
+#apple script
+#----------------------
+localFile=&quot;${LOCAL_PATH}/${TEMPLATE_NAME}&quot;
+originFloder=&quot;${GROUP_PATH}&quot;
+osascript &lt;&lt;EOF
+tell application &quot;Finder&quot;
+    duplicate POSIX file &quot;$localFile&quot; to POSIX file &quot;$originFloder&quot;
+end tell
+EOF
+#---------------------- 
+    else
+        PASSWORD=$1
+        echo &quot;${PASSWORD}&quot; | sudo -S cp -fr\
+        &quot;${LOCAL_PATH}/${TEMPLATE_NAME}&quot;\
+        &quot;${GROUP_PATH}/${TEMPLATE_NAME}&quot;
+    fi
+}
+
+syncFun(){
+    if [ $# -eq 0 ]; then  
+        createGroupFun  
+        removeFun
+        duplicateFun
+    else
+        PASSWORD=$1
+        createGroupFun &quot;${PASSWORD}&quot;
+        removeFun &quot;${PASSWORD}&quot; 
+        duplicateFun &quot;${PASSWORD}&quot;
+    fi
+}
+
+if [ -e &quot;${PASSWORD_FILE}&quot; ]; then
+    PASSWORD=`cat &quot;${PASSWORD_FILE}&quot;`
+    if [ ${#PASSWORD} -eq 0 ]; then
+        echo &quot;[Password not set]&quot;
+        syncFun
+    else
+        echo &quot;[Password has set]&quot;
+        syncFun &quot;${PASSWORD}&quot; 
+    fi
+else
+    echo &quot;[Password file not set]&quot; 
+    syncFun
+fi
+</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>___VARIABLE_productName___Uninstall</string>
+			<key>TargetType</key>
+			<string>Aggregate</string>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.aggregateTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>[TK]File template extension uninstall</string>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>ShellScript</key>
+					<string>ORIGIN_PATH=&quot;/Applications/Xcode.app/___VARIABLE_basePlatformPath___/File Templates&quot;
+GROUP_NAME=&quot;___VARIABLE_groupName___&quot;
+GROUP_PATH=&quot;${ORIGIN_PATH}/${GROUP_NAME}&quot;
+LOCAL_PATH=&quot;${PROJECT_DIR}/${PROJECT_NAME}&quot;
+TEMPLATE_NAME=&quot;${PROJECT_NAME}.xctemplate&quot;
+PASSWORD_FILE=&quot;${PROJECT_DIR}/${PROJECT_NAME}/Password&quot;
+
+createGroupFun(){
+    if [ -d &quot;${GROUP_PATH}&quot; ]; then
+        echo &quot;[Group Folder Exsit]&quot;
+    else
+        echo &quot;[Group Folder NotFound]&quot;
+        if [ $# -eq 0 ]; then
+#apple script
+#----------------------
+originFile=&quot;${ORIGIN_PATH}&quot;    
+groupName=&quot;${GROUP_NAME}&quot;
+osascript &lt;&lt;EOF
+    tell application &quot;Finder&quot;
+        make folder at (POSIX file &quot;$originFile&quot;) with properties {name:&quot;$groupName&quot;}
+    end tell
+EOF
+#----------------------
+        else
+            PASSWORD=$1
+            echo &quot;${PASSWORD}&quot; | sudo -S mkdir &quot;${GROUP_PATH}&quot;
+        fi
+    fi
+}
+
+removeFun(){
+    if [ -d &quot;${GROUP_PATH}/${TEMPLATE_NAME}&quot; ]; then   
+        if [ $# -eq 0 ]; then
+#apple script
+#----------------------
+originFile=&quot;${GROUP_PATH}/${TEMPLATE_NAME}&quot;    
+osascript &lt;&lt;EOF
+    tell application &quot;Finder&quot;
+            delete POSIX file &quot;$originFile&quot;
+    end tell
+EOF
+#----------------------
+        else
+            PASSWORD=$1
+            echo &quot;${PASSWORD}&quot; | sudo -S rm -fr &quot;${GROUP_PATH}/${TEMPLATE_NAME}&quot;
+        fi
+    else
+        echo &quot;[Origin File NotFound]&quot;
+    fi 
+}
+
+syncFun(){
+    if [ $# -eq 0 ]; then  
+        createGroupFun  
+        removeFun
+    else
+        PASSWORD=$1
+        createGroupFun &quot;${PASSWORD}&quot;
+        removeFun &quot;${PASSWORD}&quot; 
+    fi
+}
+
+if [ -e &quot;${PASSWORD_FILE}&quot; ]; then
+    PASSWORD=`cat &quot;${PASSWORD_FILE}&quot;`
+    if [ ${#PASSWORD} -eq 0 ]; then
+        echo &quot;[Password not set]&quot;
+        syncFun
+    else
+        echo &quot;[Password has set]&quot;
+        syncFun &quot;${PASSWORD}&quot; 
+    fi
+else
+    echo &quot;[Password file not set]&quot; 
+    syncFun
+fi
+</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Debug</key>
+			<dict/>
+			<key>Release</key>
+			<dict/>
+		</dict>
+	</dict>
+	<key>Definitions</key>
+	<dict>
+		<key>Password:main</key>
+		<string>___VARIABLE_password___</string>
+		<key>___VARIABLE_productName___.xctemplate</key>
+		<dict>
+			<key>Path</key>
+			<string>Template.xctemplate</string>
+			<key>SortOrder</key>
+			<integer>102</integer>
+		</dict>
+		<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist</key>
+		<dict>
+			<key>Beginning</key>
+			<string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+</string>
+			<key>End</key>
+			<string>&lt;/dict&gt;
+&lt;/plist&gt;</string>
+			<key>Indent</key>
+			<integer>1</integer>
+			<key>SortOrder</key>
+			<integer>1001</integer>
+			<key>TargetIdentifiers</key>
+			<array/>
+			<key>SubstituteMacros</key>
+			<true/>
+			<key>OmitFromProjectStructure</key>
+			<true/>
+		</dict>
+		<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Kind</key>
+		<string>&lt;key&gt;Kind&lt;/key&gt;
+&lt;string&gt;Xcode.IDEFoundation.TextSubstitutionFileTemplateKind&lt;/string&gt;</string>
+		<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:DefaultCompletionName</key>
+		<string>&lt;key&gt;DefaultCompletionName&lt;/key&gt;
+&lt;string&gt;TKFileTemplate&lt;/string&gt;</string>
+		<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:SortOrder</key>
+		<string>&lt;key&gt;SortOrder&lt;/key&gt;
+&lt;string&gt;1&lt;/string&gt;</string>
+		<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Name</key>
+		<string>&lt;key&gt;Name&lt;/key&gt;
+&lt;string&gt;___VARIABLE_templateName___&lt;/string&gt;</string>
+		<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Description</key>
+		<string>&lt;key&gt;Description&lt;/key&gt;
+&lt;string&gt;Description of template.&lt;/string&gt;</string>
+		<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Summary</key>
+		<string>&lt;key&gt;Summary&lt;/key&gt;
+&lt;string&gt;Summary of template.&lt;/string&gt;</string>
+		<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Options</key>
+		<dict>
+			<key>Beginning</key>
+			<string>&lt;key&gt;Options&lt;/key&gt;
+&lt;array&gt;</string>
+			<key>End</key>
+			<string>&lt;/array&gt;</string>
+			<key>Indent</key>
+			<integer>1</integer>
+			<key>SortOrder</key>
+			<integer>1002</integer>
+			<key>SubstituteMacros</key>
+			<true/>
+		</dict>
+		<key>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Options:ProductName</key>
+		<string>&lt;dict&gt;
+    &lt;key&gt;Required&lt;/key&gt;
+    &lt;true/&gt;
+    &lt;key&gt;Identifier&lt;/key&gt;
+    &lt;string&gt;productName&lt;/string&gt;
+    &lt;key&gt;Name&lt;/key&gt;
+    &lt;string&gt;Name:&lt;/string&gt;
+    &lt;key&gt;Description&lt;/key&gt;
+    &lt;string&gt;The name of the File to create&lt;/string&gt;
+    &lt;key&gt;Type&lt;/key&gt;
+    &lt;string&gt;text&lt;/string&gt;
+    &lt;key&gt;NotPersisted&lt;/key&gt;
+    &lt;true/&gt;
+&lt;/dict&gt;</string>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>Password</string>
+		<string>Password:main</string>
+		<string>___VARIABLE_productName___.xctemplate</string>
+		<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist</string>
+		<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Kind</string>
+		<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:DefaultCompletionName</string>
+		<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:SortOrder</string>
+		<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Name</string>
+		<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Description</string>
+		<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Summary</string>
+		<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Options</string>
+		<string>___VARIABLE_productName___.xctemplate/TemplateInfo.plist:Options:ProductName</string>
+	</array>
+</dict>
+</plist>

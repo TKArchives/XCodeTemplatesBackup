@@ -25,8 +25,6 @@
             <dict>
                 <key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
                 <string>tvOS App Icon &amp; Top Shelf Image</string>
-                <key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-                <string>tvOS LaunchImage</string>
                 <key>LD_RUNPATH_SEARCH_PATHS</key>
                 <string>$(inherited) @executable_path/Frameworks</string>
                 <key>SDKROOT</key>
@@ -98,9 +96,12 @@
                             <integer>1</integer>
                         </dict>
                         <key>main.m:main:UIApplicationMain</key>
-                        <string>@autoreleasepool {
-    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+                        <string>NSString * appDelegateClassName;
+@autoreleasepool {
+    // Setup code that might create autoreleased objects goes here.
+    appDelegateClassName = NSStringFromClass([AppDelegate class]);
 }
+return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 </string>
                         <key>AppDelegate.h:interface:window</key>
                         <string>@property (strong, nonatomic) UIWindow *window;
@@ -164,8 +165,10 @@
         <string>Info.plist:tvos</string>
         <string>Info.plist:UIRequiredDeviceCapabilities:base</string>
         <string>Info.plist:UIInterfaceStyle</string>
+        <string>Info.plist:UILaunchStoryboardName</string>
         <string>Info.plist:UIMainStoryboardFile</string>
         <string>Base.lproj/Main.storyboard</string>
+        <string>Base.lproj/LaunchScreen.storyboard</string>
     </array>
     <key>Definitions</key>
     <dict>
@@ -177,10 +180,21 @@
         <string><![CDATA[<key>UIUserInterfaceStyle</key>
 <string>Automatic</string>
 ]]></string>
+        <key>Info.plist:UILaunchStoryboardName</key>
+        <string><![CDATA[<key>UILaunchStoryboardName</key>
+<string>LaunchScreen</string>
+]]></string>
         <key>Info.plist:UIMainStoryboardFile</key>
         <string><![CDATA[<key>UIMainStoryboardFile</key>
 <string>Main</string>
 ]]></string>
+        <key>Base.lproj/LaunchScreen.storyboard</key>
+        <dict>
+            <key>Path</key>
+            <string>LaunchScreen.storyboard</string>
+            <key>SortOrder</key>
+            <integer>101</integer>
+        </dict>
         <key>*:implementation:methods:applicationWillResignActive:comments</key>
         <string>// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
 // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

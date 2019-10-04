@@ -29,6 +29,7 @@
         <string>Info.plist:Executable</string>
         <string>Info.plist:BundleName</string>
         <string>Info.plist:DevelopmentRegion</string>
+        <string>Info.plist:PackageType</string>
         <string>Info.plist:ProductVersion</string>
     </array>
 </dict>

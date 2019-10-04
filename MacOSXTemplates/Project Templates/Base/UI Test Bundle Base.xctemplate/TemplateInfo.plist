@@ -42,17 +42,6 @@
             </array>
         </dict>
     </array>
-    <key>Nodes</key>
-    <array>
-        <string>Info.plist:PackageType</string>
-    </array>
-    <key>Definitions</key>
-    <dict>
-        <key>Info.plist:PackageType</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>BNDL</string>
-]]></string>
-    </dict>
     <key>Options</key>
     <array>
         <dict>

@@ -65,9 +65,7 @@
     <key>Definitions</key>
     <dict>
         <key>Info.plist:kernel</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>KEXT</string>
-<key>OSBundleLibraries</key>
+        <string><![CDATA[<key>OSBundleLibraries</key>
 <dict/>
 ]]></string>
         <key>___PACKAGENAMEASIDENTIFIER___.c</key>

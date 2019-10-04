@@ -57,9 +57,7 @@
     <key>Definitions</key>
     <dict>
         <key>Info.plist:screenSaver</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>BNDL</string>
-<key>NSPrincipalClass</key>
+        <string><![CDATA[<key>NSPrincipalClass</key>
 <string>___PACKAGENAMEASIDENTIFIER___View</string>
 ]]></string>
         <key>___PACKAGENAMEASIDENTIFIER___View.h</key>

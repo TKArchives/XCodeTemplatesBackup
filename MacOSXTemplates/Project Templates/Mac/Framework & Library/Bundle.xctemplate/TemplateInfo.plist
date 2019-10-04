@@ -75,9 +75,7 @@
     <key>Definitions</key>
     <dict>
         <key>Info.plist:bundle</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>BNDL</string>
-<key>NSPrincipalClass</key>
+        <string><![CDATA[<key>NSPrincipalClass</key>
 <string></string>
 ]]></string>
     </dict>

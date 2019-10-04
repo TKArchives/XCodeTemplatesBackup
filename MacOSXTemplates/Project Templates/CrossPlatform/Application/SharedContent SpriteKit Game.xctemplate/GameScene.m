@@ -14,10 +14,10 @@
         NSLog(@"Failed to load GameScene.sks");
         abort();
     }
-    
+
     // Set the scale mode to scale to fit the window
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    
+
     return scene;
 }
 
@@ -26,11 +26,11 @@
     _label = (SKLabelNode *)[self childNodeWithName:@"//helloLabel"];
     _label.alpha = 0.0;
     [_label runAction:[SKAction fadeInWithDuration:2.0]];
-    
+
     // Create shape node to use during mouse interaction
     CGFloat w = (self.size.width + self.size.height) * 0.05;
     _spinnyNode = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(w, w) cornerRadius:w * 0.3];
-    
+
     _spinnyNode.lineWidth = 4.0;
     [_spinnyNode runAction:[SKAction repeatActionForever:[SKAction rotateByAngle:M_PI duration:1]]];
     [_spinnyNode runAction:[SKAction sequence:@[
@@ -47,7 +47,7 @@
     [self runAction:[SKAction repeatActionForever:[SKAction sequence:@[
         [SKAction waitForDuration:2.0],
         [SKAction runBlock:^{
-            [self addChild:[_spinnyNode copy]];
+            [self addChild:[self->_spinnyNode copy]];
         }]
     ]]]];
 #endif
@@ -79,7 +79,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [_label runAction:[SKAction actionNamed:@"Pulse"] withKey:@"fadeInOut"];
-    
+
     for (UITouch *t in touches) {
         [self makeSpinnyAtPoint:[t locationInNode:self] color:[SKColor greenColor]];
     }
@@ -106,7 +106,7 @@
 
 - (void)mouseDown:(NSEvent *)event {
     [_label runAction:[SKAction actionNamed:@"Pulse"] withKey:@"fadeInOut"];
-    
+
     [self makeSpinnyAtPoint:[event locationInNode:self] color:[SKColor greenColor]];
 }
 

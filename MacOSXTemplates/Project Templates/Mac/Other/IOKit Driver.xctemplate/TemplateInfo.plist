@@ -63,9 +63,7 @@
     <key>Definitions</key>
     <dict>
         <key>Info.plist:driver</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>KEXT</string>
-<key>IOKitPersonalities</key>
+        <string><![CDATA[<key>IOKitPersonalities</key>
 <dict/>
 <key>OSBundleLibraries</key>
 <dict/>

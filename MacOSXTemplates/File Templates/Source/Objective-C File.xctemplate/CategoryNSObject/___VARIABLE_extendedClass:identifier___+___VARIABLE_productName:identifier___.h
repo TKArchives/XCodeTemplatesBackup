@@ -1,5 +1,8 @@
 //___FILEHEADER___
 
+#import <AppKit/AppKit.h>
+
+
 ___IMPORTHEADER_extendedClass___
 
 NS_ASSUME_NONNULL_BEGIN

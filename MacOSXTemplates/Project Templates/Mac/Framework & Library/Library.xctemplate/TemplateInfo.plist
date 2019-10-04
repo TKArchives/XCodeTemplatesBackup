@@ -14,14 +14,14 @@
     <key>Concrete</key>
     <true/>
     <key>Description</key>
-    <string>This template builds a library that links against the Cocoa framework.</string>
+    <string>This template builds a library configured for macOS.</string>
     <key>SortOrder</key>
     <integer>10</integer>
     <key>Targets</key>
     <array>
         <dict>
             <key>TargetIdentifier</key>
-            <string>com.apple.dt.cocoaLibraryOrFrameworkTarget</string>
+            <string>com.apple.dt.macosLibraryOrFrameworkTarget</string>
             <key>SharedSettings</key>
             <dict>
                 <key>EXECUTABLE_PREFIX</key>

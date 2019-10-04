@@ -39,17 +39,12 @@
     </array>
     <key>Nodes</key>
     <array>
-        <string>Info.plist:PackageType</string>
         <string>Info.plist:DisplayName</string>
         <string>Info.plist:NSHumanReadableCopyright</string>
         <string>Info.plist:XPCService</string>
     </array>
     <key>Definitions</key>
     <dict>
-        <key>Info.plist:PackageType</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>XPC!</string>
-]]></string>
         <key>Info.plist:DisplayName</key>
         <string><![CDATA[<key>CFBundleDisplayName</key>
 <string>___PACKAGENAME___</string>

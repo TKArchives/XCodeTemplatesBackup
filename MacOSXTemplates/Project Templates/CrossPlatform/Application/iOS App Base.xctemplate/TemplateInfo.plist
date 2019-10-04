@@ -33,8 +33,6 @@
                 <string>iphoneos</string>
                 <key>IPHONEOS_DEPLOYMENT_TARGET</key>
                 <string>latest_iphoneos</string>
-                <key>CODE_SIGN_IDENTITY</key>
-                <string>iPhone Developer</string>
             </dict>
             <key>Configurations</key>
             <dict>
@@ -172,10 +170,13 @@
                             <integer>1</integer>
                         </dict>
                         <key>main.m:main:UIApplicationMain</key>
-                        <string>@autoreleasepool {
-    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+                        <string>NSString * appDelegateClassName;
+@autoreleasepool {
+    // Setup code that might create autoreleased objects goes here.
+    appDelegateClassName = NSStringFromClass([AppDelegate class]);
 }
-                        </string>
+return UIApplicationMain(argc, argv, nil, appDelegateClassName);
+</string>
                         <key>AppDelegate.h:interface:window</key>
                         <string>@property (strong, nonatomic) UIWindow *window;
                         </string>

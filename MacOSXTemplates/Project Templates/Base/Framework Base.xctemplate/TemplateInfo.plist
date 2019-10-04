@@ -29,8 +29,6 @@
             <string>com.apple.product-type.framework</string>
             <key>SharedSettings</key>
             <dict>
-                <key>CODE_SIGN_IDENTITY</key>
-                <string></string>
                 <key>INSTALL_PATH</key>
                 <string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
                 <key>SKIP_INSTALL</key>
@@ -41,8 +39,8 @@
                 <string>1</string>
                 <key>DYLIB_INSTALL_NAME_BASE</key>
                 <string>@rpath</string>
-                <key>DEFINES_MODULE</key> 
-                <string>YES</string> 
+                <key>DEFINES_MODULE</key>
+                <string>YES</string>
                 <key>PRODUCT_NAME</key>
                 <string>$(TARGET_NAME:c99extidentifier)</string>
             </dict>
@@ -73,15 +71,11 @@
         <string>Info.plist:NSHumanReadableCopyright</string>
         <!-- The definition for ___TARGETNAME:c99ExtIdentifier___.h needs to be supplied by the concrete frameworks -->
         <string>___TARGETNAME:c99ExtIdentifier___.h:comments</string>
-        <string>___TARGETNAME:c99ExtIdentifier___.h:imports:importCocoaForUmbrellaHeader</string>
+        <string>___TARGETNAME:c99ExtIdentifier___.h:imports:importFoundationForUmbrellaHeader</string>
         <string>___TARGETNAME:c99ExtIdentifier___.h:content</string>
     </array>
     <key>Definitions</key>
     <dict>
-        <key>Info.plist:Framework</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>FMWK</string>
-]]></string>
         <key>Info.plist:ProductVersion</key>
         <string><![CDATA[<key>CFBundleVersion</key>
 <string>$(CURRENT_PROJECT_VERSION)</string>

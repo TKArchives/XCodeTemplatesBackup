@@ -57,9 +57,7 @@
     <key>Definitions</key>
     <dict>
         <key>Info.plist:installer</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>BNDL</string>
-<key>InstallerSectionTitle</key>
+        <string><![CDATA[<key>InstallerSectionTitle</key>
 <string>___PACKAGENAMEASXML___</string>
 <key>NSMainNibFile</key>
 <string>MyInstallerPane</string>

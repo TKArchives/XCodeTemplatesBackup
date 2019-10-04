@@ -8,7 +8,7 @@
     <string>com.apple.dt.unit.cocoaApplicationDocumentBased</string>
     <key>Ancestors</key>
     <array>
-        <string>com.apple.dt.unit.cocoaApplicationStoryboard</string>
+        <string>com.apple.dt.unit.macOSApplicationUI</string>
     </array>
     <key>Options</key>
     <array>
@@ -59,6 +59,15 @@
     </dict>
 </array>
 ]]></string>
+                            <key>___PACKAGENAMEASIDENTIFIER___.entitlements</key>
+                            <dict>
+                                <key>Path</key>
+                                <string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+                                <key>SortOrder</key>
+                                <integer>1000</integer>
+                                <key>TargetIdentifiers</key>
+                                <array/>
+                            </dict>
                         </dict>
                     </dict>
                     <dict>
@@ -92,8 +101,8 @@
                         <dict>
                             <key>languageChoice</key>
                             <string>Objective-C</string>
-                            <key>storyboardBased</key>
-                            <string>false</string>
+                            <key>userInterface</key>
+                            <string>XIB</string>
                         </dict>
                         <key>Nodes</key>
                         <array>
@@ -129,8 +138,8 @@
                         <dict>
                             <key>languageChoice</key>
                             <string>Objective-C</string>
-                            <key>storyboardBased</key>
-                            <string>true</string>
+                            <key>userInterface</key>
+                            <string>Storyboard</string>
                         </dict>
                         <key>Nodes</key>
                         <array>
@@ -182,8 +191,8 @@
                         <dict>
                             <key>languageChoice</key>
                             <string>Swift</string>
-                            <key>storyboardBased</key>
-                            <string>false</string>
+                            <key>userInterface</key>
+                            <string>XIB</string>
                         </dict>
                         <key>Nodes</key>
                         <array>
@@ -219,8 +228,8 @@
                         <dict>
                             <key>languageChoice</key>
                             <string>Swift</string>
-                            <key>storyboardBased</key>
-                            <string>true</string>
+                            <key>userInterface</key>
+                            <string>Storyboard</string>
                         </dict>
                         <key>Nodes</key>
                         <array>
@@ -246,6 +255,45 @@ let windowController = storyboard.instantiateController(withIdentifier: NSStoryb
 self.addWindowController(windowController)</string>
                         </dict>
                     </dict>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>languageChoice</key>
+                            <string>Swift</string>
+                            <key>userInterface</key>
+                            <string>SwiftUI</string>
+                        </dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>Document.swift:imports:importSwiftUI</string>
+                            <string>Document.swift:implementation:methods:makeWindowControllers(override func makeWindowControllers(\))</string>
+                            <string>Document.swift:implementation:methods:makeWindowControllers:comments</string>
+                            <string>Document.swift:implementation:methods:makeWindowControllers:code</string>
+                            <string>Document.swift:implementation:methods:makeWindowControllers:code:window</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>*:imports:importSwiftUI</key>
+                            <string>import SwiftUI</string>
+                            <key>Document.swift:implementation:methods:makeWindowControllers:comments</key>
+                            <string></string>
+                            <key>Document.swift:implementation:methods:makeWindowControllers:code</key>
+                            <string>// Create the SwiftUI view that provides the window contents.
+let contentView = ContentView()
+</string>
+                            <key>Document.swift:implementation:methods:makeWindowControllers:code:window</key>
+                            <string>
+// Create the window and set the content view.
+let window = NSWindow(
+    contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
+    styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+    backing: .buffered, defer: false)
+window.center()
+window.contentView = NSHostingView(rootView: contentView)
+let windowController = NSWindowController(window: window)
+self.addWindowController(windowController)</string>
+                        </dict>
+                    </dict>
                 </array>
                 <key>false</key>
                 <array>
@@ -254,8 +302,8 @@ self.addWindowController(windowController)</string>
                         <dict>
                             <key>languageChoice</key>
                             <string>Objective-C</string>
-                            <key>storyboardBased</key>
-                            <string>false</string>
+                            <key>userInterface</key>
+                            <string>XIB</string>
                         </dict>
                         <key>Nodes</key>
                         <array>
@@ -272,8 +320,8 @@ self.addWindowController(windowController)</string>
                         <dict>
                             <key>languageChoice</key>
                             <string>Swift</string>
-                            <key>storyboardBased</key>
-                            <string>false</string>
+                            <key>userInterface</key>
+                            <string>XIB</string>
                         </dict>
                         <key>Nodes</key>
                         <array>
@@ -283,6 +331,47 @@ self.addWindowController(windowController)</string>
                         <dict>
                             <key>AppDelegate.swift:implementation:properties:window</key>
                             <string>@IBOutlet weak var window: NSWindow!</string>
+                        </dict>
+                    </dict>
+                    <dict>
+                        <key>RequiredOptions</key>
+                        <dict>
+                            <key>languageChoice</key>
+                            <string>Swift</string>
+                            <key>userInterface</key>
+                            <string>SwiftUI</string>
+                        </dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>AppDelegate.swift:imports:importSwiftUI</string>
+                            <string>AppDelegate.swift:implementation:properties:window</string>
+                            <string>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching:comments</string>
+                            <string>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching:code</string>
+                            <string>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching:code:window</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>*:imports:importSwiftUI</key>
+                            <string>import SwiftUI</string>
+                            <key>AppDelegate.swift:implementation:properties:window</key>
+                            <string>var window: NSWindow!</string>
+                            <key>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching:comments</key>
+                            <string></string>
+                            <key>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching:code</key>
+                            <string>// Create the SwiftUI view that provides the window contents.
+let contentView = ContentView()
+</string>
+                            <key>AppDelegate.swift:implementation:methods:applicationDidFinishLaunching:code:window</key>
+                            <string>
+// Create the window and set the content view. 
+window = NSWindow(
+    contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
+    styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+    backing: .buffered, defer: false)
+window.center()
+window.setFrameAutosaveName("Main Window")
+window.contentView = NSHostingView(rootView: contentView)
+window.makeKeyAndOrderFront(nil)</string>
                         </dict>
                     </dict>
                 </array>

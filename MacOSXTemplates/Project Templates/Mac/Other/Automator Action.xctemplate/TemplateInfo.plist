@@ -345,8 +345,6 @@
     &lt;key&gt;Message&lt;/key&gt;
     &lt;string&gt;(* Warning message presented to user goes here. *)&lt;/string&gt;
 &lt;/dict&gt;
-&lt;key&gt;CFBundlePackageType&lt;/key&gt;
-&lt;string&gt;BNDL&lt;/string&gt;
 </string>
         <key>Info.plist:AMAccepts</key>
         <dict>

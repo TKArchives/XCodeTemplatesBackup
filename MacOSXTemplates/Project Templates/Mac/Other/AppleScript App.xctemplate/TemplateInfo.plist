@@ -131,7 +131,10 @@
     <key>Definitions</key>
     <dict>
         <key>main.m:main:NSApplicationMain</key>
-        <string>[[NSBundle mainBundle] loadAppleScriptObjectiveCScripts];
+        <string>@autoreleasepool {
+    // Setup code that might create autoreleased objects goes here.
+}
+[[NSBundle mainBundle] loadAppleScriptObjectiveCScripts];
 return NSApplicationMain(argc, argv);
 </string>
     </dict>

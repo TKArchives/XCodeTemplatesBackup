@@ -7,7 +7,7 @@ import MetalKit
 import simd
 
 // The 256 byte aligned size of our uniform structure
-let alignedUniformsSize = (MemoryLayout<Uniforms>.size & ~0xFF) + 0x100
+let alignedUniformsSize = (MemoryLayout<Uniforms>.size + 0xFF) & -0x100
 
 let maxBuffersInFlight = 3
 
@@ -146,8 +146,8 @@ class Renderer: NSObject, MTKViewDelegate {
         
         let metalAllocator = MTKMeshBufferAllocator(device: device)
         
-        let mdlMesh = MDLMesh.newBox(withDimensions: float3(4, 4, 4),
-                                     segments: uint3(2, 2, 2),
+        let mdlMesh = MDLMesh.newBox(withDimensions: SIMD3<Float>(4, 4, 4),
+                                     segments: SIMD3<UInt32>(2, 2, 2),
                                      geometryType: MDLGeometryType.triangles,
                                      inwardNormals:false,
                                      allocator: metalAllocator)
@@ -198,7 +198,7 @@ class Renderer: NSObject, MTKViewDelegate {
         
         uniforms[0].projectionMatrix = projectionMatrix
         
-        let rotationAxis = float3(1, 1, 0)
+        let rotationAxis = SIMD3<Float>(1, 1, 0)
         let modelMatrix = matrix4x4_rotation(radians: rotation, axis: rotationAxis)
         let viewMatrix = matrix4x4_translation(0.0, 0.0, -8.0)
         uniforms[0].modelViewMatrix = simd_mul(viewMatrix, modelMatrix)
@@ -287,7 +287,7 @@ class Renderer: NSObject, MTKViewDelegate {
 }
 
 // Generic matrix math utility functions
-func matrix4x4_rotation(radians: Float, axis: float3) -> matrix_float4x4 {
+func matrix4x4_rotation(radians: Float, axis: SIMD3<Float>) -> matrix_float4x4 {
     let unitAxis = normalize(axis)
     let ct = cosf(radians)
     let st = sinf(radians)

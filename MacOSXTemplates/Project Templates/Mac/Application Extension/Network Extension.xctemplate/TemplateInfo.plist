@@ -17,6 +17,8 @@
         <dict>
             <key>SharedSettings</key>
             <dict>
+                <key>MACOSX_DEPLOYMENT_TARGET</key>
+                <string>10.15</string>
                 <key>CODE_SIGN_ENTITLEMENTS</key>
                 <string>___PACKAGENAME___/___PACKAGENAMEASIDENTIFIER___.entitlements</string>
             </dict>

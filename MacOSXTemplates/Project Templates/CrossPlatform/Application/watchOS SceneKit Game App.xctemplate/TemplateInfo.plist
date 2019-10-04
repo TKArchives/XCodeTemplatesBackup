@@ -92,7 +92,6 @@
         <string>Info.plist:WatchApp</string>
         <string>Info.plist:WatchAppBundleIdentifier</string>
         <string>Info.plist:WatchAppDisplayName</string>
-        <string>Info.plist:PackageType</string>
         <string>Info.plist:WatchAppOrientations</string>
     </array>
     <key>Definitions</key>
@@ -115,10 +114,6 @@
 		<key>Info.plist:WatchAppDisplayName</key>
 		<string><![CDATA[<key>CFBundleDisplayName</key>
 <string>___VARIABLE_productName___</string>
-]]></string>
-        <key>Info.plist:PackageType</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>APPL</string>
 ]]></string>
         <key>Info.plist:WatchAppOrientations</key>
         <string><![CDATA[<key>UISupportedInterfaceOrientations</key>

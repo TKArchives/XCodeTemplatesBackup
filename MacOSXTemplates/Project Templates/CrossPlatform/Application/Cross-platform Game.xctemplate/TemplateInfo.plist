@@ -27,10 +27,19 @@
 			<string>The type of game technology to use to create your game</string>
 			<key>Values</key>
 			<array>
-				<string>SpriteKit</string>
+				<string>RealityKit</string>
 				<string>SceneKit</string>
+				<string>SpriteKit</string>
 				<string>Metal</string>
 			</array>
+			<key>RequiredOptionsForValues</key>
+            <dict>
+                <key>RealityKit</key>
+                <dict>
+                    <key>languageChoice</key>
+                    <string>Swift</string>
+                </dict>
+            </dict>
 			<key>Default</key>
 			<string>SpriteKit</string>
 			<key>Type</key>
@@ -56,6 +65,18 @@
 						<dict>
 							<key>Identifier</key>
 							<string>com.apple.dt.unit.crossPlatformSceneKitGame_sharedComponent</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___ Shared</string>
+						</dict>
+					</array>
+				</dict>
+				<key>RealityKit</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.crossPlatformRealityKitGame_sharedComponent</string>
 							<key>Name</key>
 							<string>___PACKAGENAME___ Shared</string>
 						</dict>
@@ -117,6 +138,22 @@
 							<dict>
 								<key>Identifier</key>
 								<string>com.apple.dt.unit.crossPlatformSceneKitGame_iOSComponent</string>
+								<key>Name</key>
+								<string>___PACKAGENAME___ iOS</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>gameType</key>
+							<string>RealityKit</string>
+						</dict>
+						<key>Components</key>
+						<array>
+							<dict>
+								<key>Identifier</key>
+								<string>com.apple.dt.unit.crossPlatformRealityKitGame_iOSComponent</string>
 								<key>Name</key>
 								<string>___PACKAGENAME___ iOS</string>
 							</dict>
@@ -210,6 +247,17 @@
 			<string>tvOSPlatform</string>
 			<key>Name</key>
 			<string>Include tvOS Application</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>iOSPlatform</key>
+				<string>true</string>
+                <key>gameType</key>
+                <array>
+                    <string>SpriteKit</string>
+                    <string>SceneKit</string>
+                    <string>Metal</string>
+                </array>
+			</dict>
 			<key>NotPersisted</key>
 			<false/>
 			<key>Type</key>
@@ -313,6 +361,22 @@
 							<dict>
 								<key>Identifier</key>
 								<string>com.apple.dt.unit.crossPlatformSceneKitGame_OSXComponent</string>
+								<key>Name</key>
+								<string>___PACKAGENAME___ macOS</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>gameType</key>
+							<string>RealityKit</string>
+						</dict>
+						<key>Components</key>
+						<array>
+							<dict>
+								<key>Identifier</key>
+								<string>com.apple.dt.unit.crossPlatformRealityKitGame_OSXComponent</string>
 								<key>Name</key>
 								<string>___PACKAGENAME___ macOS</string>
 							</dict>

@@ -56,13 +56,7 @@ ___INTENT_AVAILABILITY___
  @abstract Constants indicating the state of the response.
  */
 typedef NS_ENUM(NSInteger, ___INTENT_SUBCLASS___ResponseCode) {
-    ___INTENT_SUBCLASS___ResponseCodeUnspecified = 0,
-    ___INTENT_SUBCLASS___ResponseCodeReady,
-    ___INTENT_SUBCLASS___ResponseCodeContinueInApp,
-    ___INTENT_SUBCLASS___ResponseCodeInProgress,
-    ___INTENT_SUBCLASS___ResponseCodeSuccess,
-    ___INTENT_SUBCLASS___ResponseCodeFailure,
-    ___INTENT_SUBCLASS___ResponseCodeFailureRequiringAppLaunch,___INTENTRESPONSE_CUSTOM_CODES___
+___INTENTRESPONSE_CODES___
 } ___INTENT_AVAILABILITY___;
 
 ___INTENT_AVAILABILITY___

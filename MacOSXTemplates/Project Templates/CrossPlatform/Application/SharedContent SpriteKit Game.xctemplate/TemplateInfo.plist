@@ -77,17 +77,6 @@
                         <string>___VARIABLE_tvOSPlatform___</string>
                     </dict>
                 </dict>
-                <dict>
-                    <key>Type</key>
-                    <string>launchimage</string>
-                    <key>Name</key>
-                    <string>tvOS Launch Image</string>
-                    <key>Platforms</key>
-                    <dict>
-                        <key>tvOS</key>
-                        <string>___VARIABLE_tvOSPlatform___</string>
-                    </dict>
-                </dict>
             </array>
             <key>TargetIdentifiers</key>
             <array>

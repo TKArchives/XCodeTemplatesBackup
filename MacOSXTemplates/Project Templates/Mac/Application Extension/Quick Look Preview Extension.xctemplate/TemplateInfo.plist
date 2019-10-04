@@ -94,8 +94,11 @@
     <string>com.apple.quicklook.preview</string>
     <key>NSExtensionAttributes</key>
     <dict>
+        <key>QLSupportedContentTypes</key>
+        <!-- Add Uniform Type Identifiers for content types supported by this extension. -->
+        <array/>
         <key>QLSupportsSearchableItems</key>
-        <true/>
+        <false/>
     </dict>
 </dict>
 ]]></string>

@@ -61,9 +61,7 @@
     <key>Definitions</key>
     <dict>
         <key>Info.plist:preferencePane</key>
-        <string><![CDATA[<key>CFBundlePackageType</key>
-<string>BNDL</string>
-<key>NSMainNibFile</key>
+        <string><![CDATA[<key>NSMainNibFile</key>
 <string>___PACKAGENAMEASIDENTIFIER___</string>
 <key>NSPrefPaneIconFile</key>
 <string>___PACKAGENAMEASIDENTIFIER___.tiff</string>
