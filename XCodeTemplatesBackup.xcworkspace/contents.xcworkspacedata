@@ -11,9 +11,9 @@
       location = "group:MacOSXTemplates">
    </FileRef>
    <FileRef
-      location = "group:README.md">
+      location = "group:WatchOSTemplates">
    </FileRef>
    <FileRef
-      location = "group:WatchOSTemplates">
+      location = "group:README.md">
    </FileRef>
 </Workspace>
